@@ -11,6 +11,7 @@ public class HelloController {
     public String index() {
         return "Hello World"; //
         // added comment 
+    // added comment 3
     }
 }
 
