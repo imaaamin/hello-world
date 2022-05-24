@@ -11,6 +11,7 @@ public class Genre {
 
     @Id
     @GeneratedValue(GeneratedValue.Type.AUTO)
+    // id
     private Long id;
 
     @NotNull
