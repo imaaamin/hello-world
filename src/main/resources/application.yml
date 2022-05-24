@@ -1,6 +1,17 @@
 micronaut:
   application:
     name: helloWorld
+datasources:
+  default:
+    url: ${JDBC_URL:`jdbc:mysql://localhost:3306/testtables`}
+    username: ${JDBC_USER:root}
+    password: ${JDBC_PASSWORD:amindb1999}
+    dialect: MYSQL
+    driverClassName: ${JDBC_DRIVER:com.mysql.cj.jdbc.Driver}
+flyway:
+  datasources:
+    default:
+      enabled: true
 netty:
   default:
     allocator:
